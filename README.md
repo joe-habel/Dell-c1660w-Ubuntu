@@ -2,15 +2,17 @@
 
 It took me a little bit to work out the kinks with getting this network printer to work in a modern 64 bit Ubuntu enviornment since Dell doesn't offer linux drivers for this model.
 
+I've only tested this setup on Ubuntu 16.04/18.04 and Mint 19.
+
 ## Driver and Dependencies
 
-Luckily we can make use of the following driver from [Xerox](https://www.support.xerox.com/support/phaser-6000/file-download/engb.html?operatingSystem=linux&fileLanguage=en_GB&contentId=116065&from=downloads&viewArchived=false). However, this was a driver writter only for 32-bit debian systems. The dependencies I needed to run on Ubunutu 18.04 were `libcupsimage2:i386` and `libstdc++6:i386`.
+Luckily we can make use of the following driver from [Xerox](https://www.support.xerox.com/support/phaser-6000/file-download/engb.html?operatingSystem=linux&fileLanguage=en_GB&contentId=116065&from=downloads&viewArchived=false) for the Phaser 6000B. However, this was a driver writter only for 32-bit debian systems. The dependencies I needed to get it to run on Ubunutu 18.04 were `libcupsimage2:i386` and `libstdc++6:i386`.
 
 ## Installing the Driver
 
 ### Easy Install
 
-Simply run the following:
+Simply copy and paste the following into a terminal:
 ```
 wget -O c1660w-easy-install.sh https://raw.githubusercontent.com/joe-habel/Dell-c1660w-Ubuntu/master/install_driver.sh && chmod +x c1660w-easy-install.sh && sudo ./c1660w-easy-install.sh && rm c1660w-easy-install.sh
 ```
