@@ -5,7 +5,6 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 DRIVER_TEMP="${DIR}""/.temp-driver"
 DRIVER_ZIP="${DIR}""/xerox-phaser-6000.zip"
 DRIVER_URL="https://www.support.xerox.com/support/phaser-6000/file-redirect/engb.html?operatingSystem=linux&fileLanguage=en_GB&contentId=116065"
-DRIVER=
 
 function finish {
     rm $DRIVER_ZIP 2>/dev/null
