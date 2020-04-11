@@ -12,7 +12,7 @@ Luckily we can make use of the following driver from [Xerox](https://www.support
 
 Simply run the following:
 ```
-wget -O c1660w-easy-install.sh https://raw.githubusercontent.com/joe-habel/Dell-c1660w-Ubuntu/master/install_driver.sh && sudo ./c1660w-easy-install.sh && rm c1660w-easy-install.sh
+wget -O c1660w-easy-install.sh https://raw.githubusercontent.com/joe-habel/Dell-c1660w-Ubuntu/master/install_driver.sh && chmod +x c1660w-easy-install.sh && sudo ./c1660w-easy-install.sh && rm c1660w-easy-install.sh
 ```
 
 ### Manual Install
